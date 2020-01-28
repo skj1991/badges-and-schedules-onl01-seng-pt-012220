@@ -19,5 +19,5 @@ def assign_rooms(attendees)
 end
 
 def printer(attendees)
-  printer_list =
+  printer_list = batch_badge_creator(attendees).concat assign_rooms(attendees)
 end
